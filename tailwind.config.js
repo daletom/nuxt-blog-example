@@ -5,11 +5,10 @@ module.exports = {
   content: ["./src/**/*.{html,js,vue,ts,md}"],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["uncut-sans", ...defaultTheme.fontFamily.sans],
-        serif: ["sprat", ...defaultTheme.fontFamily.serif],
-      },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms')
+  ],
 };
